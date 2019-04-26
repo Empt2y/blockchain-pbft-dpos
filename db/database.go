@@ -45,14 +45,3 @@ type KeyValueStore interface {
 	Compacter
 	io.Closer
 }
-
-// Database包含了所有处理数据库的方法，不仅仅是kv数据库
-type Database interface {
-	Reader
-	Writer
-	Batcher
-	Iteratee
-	Stater
-	Compacter
-	io.Closer
-}

@@ -1,5 +1,6 @@
 package core
 
+// 指令类型
 const (
 	InsDataTypeNormal = iota
 	InsDataTypeTransaction

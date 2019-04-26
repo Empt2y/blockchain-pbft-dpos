@@ -12,3 +12,12 @@ type BlockHeader struct {
 	MerkleRoot    []byte   // 交易根哈希
 	Forks         [][]byte // 分叉区块集合
 }
+
+// 计算区块头哈希
+func (bh *BlockHeader) CalcHash() {
+
+}
+
+func (bh *BlockHeader) Hash() []byte {
+	return bh.Address
+}
